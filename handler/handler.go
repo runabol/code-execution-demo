@@ -74,7 +74,7 @@ func buildTask(er ExecRequest) (input.Task, error) {
 		image = "golang:1.19"
 		filename = "main.go"
 		run = "go run main.go > $TORK_OUTPUT"
-	case "shell":
+	case "bash":
 		image = "alpine:3.18.3"
 		filename = "script"
 		run = "sh ./script > $TORK_OUTPUT"
