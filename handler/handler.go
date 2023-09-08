@@ -56,7 +56,13 @@ func Handler(c middleware.Context) error {
 
 	log.Debug().Msgf("job %s submitted", job.ID)
 
-	return c.String(http.StatusOK, <-result)
+	select {
+	case r := <-result:
+		return c.String(http.StatusOK, r)
+	case <-c.Done():
+		return c.String(http.StatusGatewayTimeout, "timeout")
+	}
+
 }
 
 func buildTask(er ExecRequest) (input.Task, error) {
