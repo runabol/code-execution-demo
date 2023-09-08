@@ -83,9 +83,14 @@ func buildTask(er ExecRequest) (input.Task, error) {
 	}
 
 	return input.Task{
-		Name:  "execute code",
-		Image: image,
-		Run:   run,
+		Name:    "execute code",
+		Image:   image,
+		Run:     run,
+		Timeout: "1s",
+		Limits: &input.Limits{
+			CPUs:   ".5",
+			Memory: "6m",
+		},
 		Files: map[string]string{
 			filename: er.Code,
 		},
