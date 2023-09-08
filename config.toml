@@ -1,0 +1,7 @@
+[coordinator.api]
+endpoints.health = true
+endpoints.jobs = false
+endpoints.tasks = false
+endpoints.nodes = false
+endpoints.queues = false
+endpoints.stats = false
