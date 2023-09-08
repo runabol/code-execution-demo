@@ -20,7 +20,8 @@ func Handler(c middleware.Context) error {
 	er := ExecRequest{}
 
 	if err := c.Bind(&er); err != nil {
-		return err
+		c.Error(http.StatusBadRequest, errors.Wrapf(err, "error binding request"))
+		return nil
 	}
 
 	log.Debug().Msgf("%s", er.Code)
@@ -59,7 +60,7 @@ func Handler(c middleware.Context) error {
 
 func buildTask(er ExecRequest) (input.Task, error) {
 	var image string
-	var script string
+	var run string
 	var filename string
 
 	switch strings.TrimSpace(er.Language) {
@@ -68,11 +69,15 @@ func buildTask(er ExecRequest) (input.Task, error) {
 	case "python3":
 		image = "python:3"
 		filename = "script.py"
-		script = "python script.py > $TORK_OUTPUT"
+		run = "python script.py > $TORK_OUTPUT"
 	case "golang":
 		image = "golang:1.19"
 		filename = "main.go"
-		script = "go run main.go > $TORK_OUTPUT"
+		run = "go run main.go > $TORK_OUTPUT"
+	case "shell":
+		image = "alpine:3.18.3"
+		filename = "script"
+		run = "sh ./script > $TORK_OUTPUT"
 	default:
 		return input.Task{}, errors.Errorf("unknown language: %s", er.Language)
 	}
@@ -80,7 +85,7 @@ func buildTask(er ExecRequest) (input.Task, error) {
 	return input.Task{
 		Name:  "execute code",
 		Image: image,
-		Run:   script,
+		Run:   run,
 		Files: map[string]string{
 			filename: er.Code,
 		},
