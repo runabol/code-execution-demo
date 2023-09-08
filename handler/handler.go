@@ -28,7 +28,8 @@ func Handler(c middleware.Context) error {
 
 	task, err := buildTask(er)
 	if err != nil {
-		return err
+		c.Error(http.StatusBadRequest, err)
+		return nil
 	}
 
 	result := make(chan string)
