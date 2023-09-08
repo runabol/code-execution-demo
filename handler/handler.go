@@ -86,7 +86,7 @@ func buildTask(er ExecRequest) (input.Task, error) {
 		Name:    "execute code",
 		Image:   image,
 		Run:     run,
-		Timeout: "1s",
+		Timeout: "5s",
 		Limits: &input.Limits{
 			CPUs:   ".5",
 			Memory: "6m",
