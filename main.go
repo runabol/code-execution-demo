@@ -6,9 +6,9 @@ import (
 	"os"
 
 	"github.com/runabol/tork-demo-codexec/handler"
-	"github.com/runabol/tork/bootstrap"
 	"github.com/runabol/tork/cli"
 	"github.com/runabol/tork/conf"
+	"github.com/runabol/tork/engine"
 )
 
 func main() {
@@ -17,9 +17,14 @@ func main() {
 		os.Exit(1)
 	}
 
-	bootstrap.RegisterEndpoint(http.MethodPost, "/exec", handler.Handler)
+	app := cli.New()
 
-	if err := cli.Run(); err != nil {
+	app.CustomizeEngine(func(eng *engine.Engine) error {
+		eng.RegisterEndpoint(http.MethodPost, "/exec", handler.Handler)
+		return nil
+	})
+
+	if err := app.Run(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
