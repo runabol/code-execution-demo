@@ -21,7 +21,7 @@ Make sure you have [Go](https://golang.org/) version 1.19 or better installed.
 Start the server:
 
 ```bash
-go run main.go
+go run main.go run standalone
 ```
 
 Execute a code snippet. Example
