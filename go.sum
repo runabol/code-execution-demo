@@ -105,8 +105,6 @@ github.com/rogpeppe/go-internal v1.8.0 h1:FCbCCtXNOY3UtUuHUYaghJg4y7Fd14rXifAYUA
 github.com/rs/xid v1.4.0/go.mod h1:trrq9SKmegXys3aeAKXMUTdJsYXVwGY3RLcfgqegfbg=
 github.com/rs/zerolog v1.29.1 h1:cO+d60CHkknCbvzEWxP0S9K6KqyTjrCNUy1LdQLCGPc=
 github.com/rs/zerolog v1.29.1/go.mod h1:Le6ESbR7hc+DP6Lt1THiV8CQSdkkNrd3R0XbEgp3ZBU=
-github.com/runabol/tork v0.0.14-0.20230908204949-aaedc7d57f7e h1:SQgFwnzXpX+uHRa19l8a9erL+JiimiX3LrTT4QGj4/w=
-github.com/runabol/tork v0.0.14-0.20230908204949-aaedc7d57f7e/go.mod h1:DQH4oH8TcK00kqDQS2Ew+/x0xNlIC0s1jZNG2zsq+IE=
 github.com/runabol/tork v0.0.14-0.20230908213552-ccda151a6225 h1:z2owwGI6lrgS4NxTHLZ0d0ST2aZTsRaO4DtG57BN3PY=
 github.com/runabol/tork v0.0.14-0.20230908213552-ccda151a6225/go.mod h1:DQH4oH8TcK00kqDQS2Ew+/x0xNlIC0s1jZNG2zsq+IE=
 github.com/shirou/gopsutil/v3 v3.23.6 h1:5y46WPI9QBKBbK7EEccUPNXpJpNrvPuTD0O2zHEHT08=
