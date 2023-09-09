@@ -1,4 +1,4 @@
-## Demo
+## Arbitrary Code Execution Demo
 
 Have you ever wondered what happens behind the scenes when you hit "Run" on a code snippet in online development environments like [Go Playground](https://go.dev/play/) or [Repl.it](https://replit.com/)?
 
