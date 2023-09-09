@@ -12,7 +12,7 @@ The main considerations for building a service such as this are:
 
 3.  **Scalability**: We need to be able to linearly scale this service as the number of users grows.
 
-These considerations are addressed in this demonstration by utilizing Tork, a distributed workflow engine, to handle all the heavy lifting
+These considerations are addressed in this demonstration by utilizing [Tork](https://github.com/runabol/tork), a distributed workflow engine, to handle all the heavy lifting
 
 ## Running the demo
 
