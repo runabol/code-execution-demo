@@ -18,7 +18,10 @@ These considerations are addressed in this demonstration by utilizing [Tork](htt
 
 ## Running the demo
 
-Make sure you have [Go](https://golang.org/) version 1.19 or better installed.
+You'll need:
+
+- [Go](https://golang.org/) version 1.19 or better installed.
+- Docker 
 
 Start the server:
 
@@ -43,4 +46,14 @@ Should output:
 hello world
 ```
 
-You can try changing the `language` to `golang` or `bash`.
+You can try changing the `language` to `go` or `bash`.
+
+## Frontend 
+
+```bash
+cd frontend
+npm i
+npm run dev
+```
+
+
