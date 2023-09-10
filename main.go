@@ -7,8 +7,8 @@ import (
 
 	"github.com/runabol/tork-demo-codexec/handler"
 	"github.com/runabol/tork/cli"
-	"github.com/runabol/tork/conf"
-	"github.com/runabol/tork/engine"
+	"github.com/runabol/tork/pkg/conf"
+	"github.com/runabol/tork/pkg/engine"
 )
 
 func main() {
