@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/runabol/tork-demo-codexec/handler"
+	"github.com/runabol/code-execution-demo/handler"
 	"github.com/runabol/tork/cli"
 	"github.com/runabol/tork/pkg/conf"
 	"github.com/runabol/tork/pkg/engine"

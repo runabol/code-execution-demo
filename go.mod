@@ -1,4 +1,4 @@
-module github.com/runabol/tork-demo-codexec
+module github.com/runabol/code-execution-demo
 
 go 1.19
 
