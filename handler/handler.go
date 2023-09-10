@@ -73,11 +73,11 @@ func buildTask(er ExecRequest) (input.Task, error) {
 	switch strings.TrimSpace(er.Language) {
 	case "":
 		return input.Task{}, errors.Errorf("require: language")
-	case "python3":
+	case "python":
 		image = "python:3"
 		filename = "script.py"
 		run = "python script.py > $TORK_OUTPUT"
-	case "golang":
+	case "go":
 		image = "golang:1.19"
 		filename = "main.go"
 		run = "go run main.go > $TORK_OUTPUT"
@@ -95,8 +95,8 @@ func buildTask(er ExecRequest) (input.Task, error) {
 		Run:     run,
 		Timeout: "5s",
 		Limits: &input.Limits{
-			CPUs:   ".5",
-			Memory: "6m",
+			CPUs:   "1",
+			Memory: "20m",
 		},
 		Files: map[string]string{
 			filename: er.Code,

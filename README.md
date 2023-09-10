@@ -1,5 +1,7 @@
 ## Arbitrary Code Execution Demo
 
+![screenshot](screenshot.png "screenshot")
+
 Have you ever wondered what happens behind the scenes when you hit "Run" on a code snippet in online development environments like [Go Playground](https://go.dev/play/) or [Repl.it](https://replit.com/)?
 
 This demonstration provides a basic implementation using approximately 100 lines of code.
@@ -31,7 +33,7 @@ curl \
   -s \
   -X POST \
   -H "content-type:application/json" \
-  -d '{"language":"python3","code":"print(\"hello world\")"}' \
+  -d '{"language":"python","code":"print(\"hello world\")"}' \
   http://localhost:8000/execute
 ```
 
