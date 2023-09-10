@@ -20,7 +20,7 @@ func main() {
 	app := cli.New()
 
 	app.ConfigureEngine(func(eng *engine.Engine) error {
-		eng.RegisterEndpoint(http.MethodPost, "/exec", handler.Handler)
+		eng.RegisterEndpoint(http.MethodPost, "/execute", handler.Handler)
 		return nil
 	})
 

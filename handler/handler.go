@@ -8,7 +8,7 @@ import (
 	"github.com/rs/zerolog/log"
 	"github.com/runabol/tork"
 	"github.com/runabol/tork/input"
-	"github.com/runabol/tork/middleware"
+	"github.com/runabol/tork/middleware/request"
 )
 
 type ExecRequest struct {
@@ -16,7 +16,7 @@ type ExecRequest struct {
 	Language string `json:"language"`
 }
 
-func Handler(c middleware.Context) error {
+func Handler(c request.Context) error {
 	er := ExecRequest{}
 
 	if err := c.Bind(&er); err != nil {

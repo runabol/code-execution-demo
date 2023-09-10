@@ -32,7 +32,7 @@ curl \
   -X POST \
   -H "content-type:application/json" \
   -d '{"language":"python3","code":"print(\"hello world\")"}' \
-  http://localhost:8000/exec
+  http://localhost:8000/execute
 ```
 
 Should output:
