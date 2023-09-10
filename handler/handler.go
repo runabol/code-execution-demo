@@ -58,9 +58,9 @@ func Handler(c request.Context) error {
 
 	select {
 	case r := <-result:
-		return c.String(http.StatusOK, r)
+		return c.JSON(http.StatusOK, map[string]string{"output": r})
 	case <-c.Done():
-		return c.String(http.StatusGatewayTimeout, "timeout")
+		return c.JSON(http.StatusGatewayTimeout, map[string]string{"messagde": "timeout"})
 	}
 
 }
