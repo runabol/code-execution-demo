@@ -4,17 +4,9 @@
 
 Have you ever wondered what happens behind the scenes when you hit "Run" on a code snippet in online development environments like [Go Playground](https://go.dev/play/) or [Repl.it](https://replit.com/)?
 
-This demonstration provides a basic implementation using approximately 100 lines of code.
+## Detailed instructions 
 
-The main considerations for building a service such as this are:
-
-1.  **Security**: Since we allow users to execute arbitrary code, we need a way to sandbox the execution to prevent malicious users from gaining unauthorized access to our servers.
-
-2.  **Limits**: We want to limit the resources allocated to the execution so that it does not tax our finite server resources.
-
-3.  **Scalability**: We need to be able to linearly scale this service as the number of users grows.
-
-These considerations are addressed in this demonstration by utilizing [Tork](https://github.com/runabol/tork), a distributed workflow engine, to handle all the heavy lifting
+[https://dev.to/acoh3n/lets-build-a-code-execution-engine-4kgi](https://dev.to/acoh3n/lets-build-a-code-execution-engine-4kgi)
 
 ## Running the demo
 
@@ -50,7 +42,7 @@ You can try changing the `language` to `go` or `bash`.
 
 ## Frontend 
 
-```bash
+```shell
 cd frontend
 npm i
 npm run dev
