@@ -8,7 +8,6 @@ import (
 	"github.com/runabol/code-execution-demo/handler"
 	"github.com/runabol/tork/cli"
 	"github.com/runabol/tork/pkg/conf"
-	"github.com/runabol/tork/pkg/engine"
 )
 
 func main() {
@@ -19,10 +18,7 @@ func main() {
 
 	app := cli.New()
 
-	app.ConfigureEngine(func(eng *engine.Engine) error {
-		eng.RegisterEndpoint(http.MethodPost, "/execute", handler.Handler)
-		return nil
-	})
+	app.RegisterEndpoint(http.MethodPost, "/execute", handler.Handler)
 
 	if err := app.Run(); err != nil {
 		fmt.Println(err)
