@@ -7,8 +7,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 	"github.com/runabol/tork"
+	"github.com/runabol/tork/pkg/engine"
 	"github.com/runabol/tork/pkg/input"
-	"github.com/runabol/tork/pkg/middleware/request"
+	"github.com/runabol/tork/pkg/middleware/web"
 )
 
 type ExecRequest struct {
@@ -16,7 +17,7 @@ type ExecRequest struct {
 	Language string `json:"language"`
 }
 
-func Handler(c request.Context) error {
+func Handler(c web.Context) error {
 	er := ExecRequest{}
 
 	if err := c.Bind(&er); err != nil {
@@ -47,7 +48,7 @@ func Handler(c request.Context) error {
 		Tasks: []input.Task{task},
 	}
 
-	job, err := c.SubmitJob(input, listener)
+	job, err := engine.SubmitJob(c.Request().Context(), input, listener)
 
 	if err != nil {
 		c.Error(http.StatusBadRequest, errors.Wrapf(err, "error executing code"))
