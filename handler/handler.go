@@ -7,9 +7,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
 	"github.com/runabol/tork"
-	"github.com/runabol/tork/pkg/engine"
-	"github.com/runabol/tork/pkg/input"
-	"github.com/runabol/tork/pkg/middleware/web"
+	"github.com/runabol/tork/engine"
+	"github.com/runabol/tork/input"
+	"github.com/runabol/tork/middleware/web"
 )
 
 type ExecRequest struct {

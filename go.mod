@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/pkg/errors v0.9.1
 	github.com/rs/zerolog v1.29.1
-	github.com/runabol/tork v0.1.7-0.20230912185131-63f5c5619892
+	github.com/runabol/tork v0.1.8
 )
 
 require (
