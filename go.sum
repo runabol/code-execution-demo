@@ -111,10 +111,8 @@ github.com/rogpeppe/go-internal v1.8.0 h1:FCbCCtXNOY3UtUuHUYaghJg4y7Fd14rXifAYUA
 github.com/rs/xid v1.4.0/go.mod h1:trrq9SKmegXys3aeAKXMUTdJsYXVwGY3RLcfgqegfbg=
 github.com/rs/zerolog v1.29.1 h1:cO+d60CHkknCbvzEWxP0S9K6KqyTjrCNUy1LdQLCGPc=
 github.com/rs/zerolog v1.29.1/go.mod h1:Le6ESbR7hc+DP6Lt1THiV8CQSdkkNrd3R0XbEgp3ZBU=
-github.com/runabol/tork v0.1.7-0.20230912185131-63f5c5619892 h1:p6I0NJUB779beljMNaFssVjeRWxWo7JutU5a53u4zgo=
-github.com/runabol/tork v0.1.7-0.20230912185131-63f5c5619892/go.mod h1:s6iquhuabcYQ+b6dEWrDwJJuU46t19G2X2tUkqKHW8g=
-github.com/runabol/tork v0.1.8 h1:cDFDlr7u/rAjI4oMFgqJpxSLAVxWQxqKbLMzYbtHc7I=
-github.com/runabol/tork v0.1.8/go.mod h1:s6iquhuabcYQ+b6dEWrDwJJuU46t19G2X2tUkqKHW8g=
+github.com/runabol/tork v0.1.9 h1:vTmGNr/uiTnpSWjhyi5DhV/QOiIoHJLAmuDNhl2dzNw=
+github.com/runabol/tork v0.1.9/go.mod h1:s6iquhuabcYQ+b6dEWrDwJJuU46t19G2X2tUkqKHW8g=
 github.com/russross/blackfriday/v2 v2.1.0 h1:JIOH55/0cWyOuilr9/qlrm0BSXldqnqwMsf35Ld67mk=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/shirou/gopsutil/v3 v3.23.6 h1:5y46WPI9QBKBbK7EEccUPNXpJpNrvPuTD0O2zHEHT08=
