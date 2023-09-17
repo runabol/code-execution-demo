@@ -4,8 +4,8 @@ go 1.19
 
 require (
 	github.com/pkg/errors v0.9.1
-	github.com/rs/zerolog v1.29.1
-	github.com/runabol/tork v0.1.12
+	github.com/rs/zerolog v1.30.0
+	github.com/runabol/tork v0.1.13
 )
 
 require (
@@ -23,10 +23,10 @@ require (
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
-	github.com/go-playground/validator/v10 v10.14.0 // indirect
+	github.com/go-playground/validator/v10 v10.15.4 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
-	github.com/google/uuid v1.3.0 // indirect
+	github.com/google/uuid v1.3.1 // indirect
 	github.com/jmoiron/sqlx v1.3.5 // indirect
 	github.com/knadh/koanf/maps v0.1.1 // indirect
 	github.com/knadh/koanf/parsers/toml v0.1.0 // indirect
@@ -49,10 +49,10 @@ require (
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
 	github.com/rabbitmq/amqp091-go v1.8.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/shirou/gopsutil/v3 v3.23.6 // indirect
+	github.com/shirou/gopsutil/v3 v3.23.8 // indirect
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
-	github.com/tklauser/go-sysconf v0.3.11 // indirect
-	github.com/tklauser/numcpus v0.6.0 // indirect
+	github.com/tklauser/go-sysconf v0.3.12 // indirect
+	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/urfave/cli/v2 v2.25.7 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
@@ -62,7 +62,7 @@ require (
 	golang.org/x/exp v0.0.0-20230807204917-050eac23e9de // indirect
 	golang.org/x/mod v0.11.0 // indirect
 	golang.org/x/net v0.12.0 // indirect
-	golang.org/x/sys v0.10.0 // indirect
+	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	golang.org/x/tools v0.6.0 // indirect
