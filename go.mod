@@ -1,11 +1,13 @@
 module github.com/runabol/code-execution-demo
 
-go 1.19
+go 1.21
+
+toolchain go1.21.1
 
 require (
 	github.com/pkg/errors v0.9.1
 	github.com/rs/zerolog v1.30.0
-	github.com/runabol/tork v0.1.13
+	github.com/runabol/tork v0.1.16
 )
 
 require (
