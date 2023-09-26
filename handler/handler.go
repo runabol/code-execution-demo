@@ -61,9 +61,8 @@ func Handler(c web.Context) error {
 	case r := <-result:
 		return c.JSON(http.StatusOK, map[string]string{"output": r})
 	case <-c.Done():
-		return c.JSON(http.StatusGatewayTimeout, map[string]string{"messagde": "timeout"})
+		return c.JSON(http.StatusGatewayTimeout, map[string]string{"message": "timeout"})
 	}
-
 }
 
 func buildTask(er ExecRequest) (input.Task, error) {
