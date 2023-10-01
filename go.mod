@@ -6,14 +6,14 @@ toolchain go1.21.1
 
 require (
 	github.com/pkg/errors v0.9.1
-	github.com/rs/zerolog v1.30.0
-	github.com/runabol/tork v0.1.16
+	github.com/rs/zerolog v1.31.0
+	github.com/runabol/tork v0.1.18
 )
 
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20230124172434-306776ec8161 // indirect
 	github.com/Microsoft/go-winio v0.6.1 // indirect
-	github.com/antonmedv/expr v1.15.0 // indirect
+	github.com/antonmedv/expr v1.15.3 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/docker/distribution v2.8.2+incompatible // indirect
 	github.com/docker/docker v23.0.6+incompatible // indirect
@@ -64,7 +64,7 @@ require (
 	golang.org/x/exp v0.0.0-20230807204917-050eac23e9de // indirect
 	golang.org/x/mod v0.11.0 // indirect
 	golang.org/x/net v0.12.0 // indirect
-	golang.org/x/sys v0.11.0 // indirect
+	golang.org/x/sys v0.12.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	golang.org/x/tools v0.6.0 // indirect
